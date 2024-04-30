@@ -1,0 +1,184 @@
+*{
+  font-family: "Manrope",sans-serif;
+  font-weight: 450;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    56% { color: blue; }
+    70% { color: indigo; }
+    84% { color: violet; }
+    100% { color: white; }
+
+  0% { border-color: red; }
+  14% { border-color: orange; }
+  28% { border-color: yellow; }
+  42% { border-color: green; }
+  56% { border-color: blue; }
+  70% { border-color: indigo; }
+  84% { border-color: violet; }
+  100% { border-color: white; }
+}
+#curriculoHeader{
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  justify-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  animation: rainbow 2.5s;
+  border: 2px solid var(--color-white);
+  border-radius: 2rem;
+  padding: 30px;
+  transition: 0.5s;
+}
+#curriculumName{
+  font-size: 54px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+:root{
+  --color-background: #030207;
+  --color-background-main: #1b181b;
+  --color-white: #fff;
+  --color-blue: #1474b4;
+  --color-ruby: rgb(168, 5, 5);
+  
+}
+
+
+body{
+  background-color: var(--color-background);
+  color: var(--color-white);
+}
+
+#mainSheet{
+
+  border-radius: 16px;
+  background-color: var(--color-background-main);
+  padding: 12px;
+  margin: 12px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.infoBox{
+  display: flex;
+}
+
+h2{
+  font-weight: bolder;
+}
+a{
+  color: var(--color-white);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.section__knowledge,.section__projects,.section__academicInfo, .section__experienceInfo, .section__personalInfo_text {
+  border: 2px solid var(--color-white);
+  font-size: 26px;
+  margin: 8px;
+  padding: 28px;
+  border-radius: 1.5rem;
+  transition: 0.4s;
+}
+
+.section__personalInfo{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+img{
+
+  float:right;
+  border-radius: 2rem;
+  height: 320px;
+  margin: 30px;
+
+}
+.section__personalInfo_text{
+  margin: 0 30px;
+  width: 350px;
+}  
+
+#mainSheet{
+  box-shadow: 1rem 1rem 2rem -0.5rem rgba(20,116,180, 0.25);
+}
+
+img{
+  box-shadow: 1rem 1rem 2rem -0.5rem rgba(165, 184, 22, 0.25);
+}
+
+.infoBox{
+  margin: 50px;
+}
+
+.section__projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 3;
+
+}
+
+#projects{
+  text-align: center;
+}
+.section__knowledge:hover, .section__personalInfo_text:hover, .section__academicInfo:hover, .section__experienceInfo:hover, .section__projects:hover{
+  cursor: pointer;
+  color: var(--color-ruby);
+  border-color: var(--color-ruby);
+}
+.projectList{
+  transition: 0.3s;
+}
+.projectList:hover{
+  color: var(--color-white);
+}
+
+#curriculoHeader:hover{
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+#textFooter{
+  position: absolute;
+  right: 30%;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+
+nav{
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+nav > a{
+  margin: 0 8px;
+}
+
+a:hover{
+  color: var(--color-ruby);
+}
